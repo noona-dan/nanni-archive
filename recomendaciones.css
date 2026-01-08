@@ -1,0 +1,143 @@
+@import url("galeria.css");
+
+/* MENU PAGE */
+.menu {
+  margin: 40px 0;
+}
+
+.menu-section {
+  margin-bottom: 45px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.menu-section h2 {
+  color: var(--pink-dark);
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+
+.menu-card {
+  background: var(--pink-soft);
+  border-radius: 25px;
+  padding: 20px 25px;
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+  transition: transform .35s var(--ease-kawaii), box-shadow .35s var(--ease-soft);
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(229,92,138,.25);
+}
+
+.menu-card h3 {
+  margin: 0;
+  color: var(--text);
+}
+
+.menu-card p {
+  font-size: 13px;
+  opacity: .8;
+  margin: 6px 0 10px;
+}
+
+.price {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: var(--pink-dark);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.menu-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Plato detalle */
+.dish-detail {
+  padding: 40px 20px;
+}
+
+.dish-title {
+  font-size: 32px;
+  color: var(--pink-dark);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Layout: sidebar 1/4 + contenido 3/4 */
+.dish-content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Imagenes 1/4 */
+.dish-images {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dish-images img {
+  width: 85%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.dish-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Info 3/4 */
+.dish-info {
+  flex: 1 1 70%;
+}
+
+/* Rankings estilo tarjetas */
+.dish-rankings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.rank-item {
+  background: var(--pink-soft);
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 120px;
+}
+
+.stars {
+  color: var(--pink-dark);
+}
+
+/* Descripción */
+.dish-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+}
