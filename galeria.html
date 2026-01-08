@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>nanni-archive-gal</title>
+  <link rel="stylesheet" href="css/galeria.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="img/naruto icon.gif" alt="icon" class="logo">
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">HOME</a>
+      <a href="recomendaciones.html">RECOMENDACIONES</a>
+      <a href="blogs.html">BLOGS</a>
+      <a href="galeria.html" class="active">GALERIA</a>
+      <a href="redes.html">REDES SOCIALES</a>
+    </nav>
+
+    <a href="https://neocities.org/site/nanni-archive" class="phone">
+      💮nanni-archive💮<br>
+      <span>PERFIL NEOCITIES</span>
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="img/ojos.jpg" alt="Sakura background">
+    <div class="hero-text">
+      <span class="tagline">Calles, cielo y más</span>
+      <h1>GALERÍA</h1>
+    </div>
+  </section>
+
+  <!-- Catalog Grid -->
+  <main class="catalog">
+    <h2>FOTITOS</h2>
+    <div class="catalog-grid">
+      
+      
+      <div class="product-card">
+        <img src="img/huayna1.jpg" alt="Ramen Deluxe">
+        <h3>Huayna Potosí</h3
+        <p>Faldas del Huayna Potosi, La Paz Bolivia</p>
+        <button class="btn view-btn">Ver más</button>
+        <!-- PANEL EXPANDIDO -->
+         <div class="detail-panel">
+          <div class="detail-tags">
+            <span>🥶 frio</span>
+            <span>💗 Viaje con amigas</span>
+          </div>
+          <div class="detail-text">
+            <p>
+              A 📍 6,088 m sobre el nivel del mar, tuve un viaje de mano de una amiga que estudia medicina, bonita experiencia que esperpo repetir
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+    </div>
+  </main>
+
+</div>
+
+</body>
+
+
+
+<script>
+  const buttons = document.querySelectorAll('.view-btn');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.product-card');
+
+      // cerrar otras cards abiertas
+      document.querySelectorAll('.product-card.expanded')
+        .forEach(openCard => {
+          if (openCard !== card) {
+            openCard.classList.remove('expanded');
+            openCard.querySelector('.view-btn').textContent = 'View';
+          }
+        });
+
+      card.classList.toggle('expanded');
+
+      btn.textContent = card.classList.contains('expanded')
+        ? 'Close'
+        : 'View';
+    });
+  });
+</script>
+
+</html>
