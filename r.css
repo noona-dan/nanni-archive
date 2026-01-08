@@ -1,0 +1,71 @@
+/* Plato detalle */
+.dish-detail {
+  padding: 40px 20px;
+}
+
+.dish-title {
+  font-size: 32px;
+  color: var(--pink-dark);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Layout: sidebar 1/4 + contenido 3/4 */
+.dish-content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Imagenes 1/4 */
+.dish-images {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dish-images img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.dish-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Info 3/4 */
+.dish-info {
+  flex: 1 1 70%;
+}
+
+/* Rankings estilo tarjetas */
+.dish-rankings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.rank-item {
+  background: var(--pink-soft);
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 120px;
+}
+
+.stars {
+  color: var(--pink-dark);
+}
+
+/* Descripción */
+.dish-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+}
