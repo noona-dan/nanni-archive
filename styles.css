@@ -156,7 +156,7 @@ body {
 
 /* CONTENEDOR CON SCROLL (ya lo tienes, solo reafirmo) */
 .news {
-  max-height: 420px;
+  max-height: 480px;
   overflow-y: auto;
   padding-right: 8px;
 }
@@ -312,3 +312,61 @@ a:active, button:active {
   75% { transform: rotate(1deg); }
   100% { transform: rotate(0); }
 }
+
+
+.hero-chat {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 25px;
+  align-items: center;
+  margin: 25px 0;
+}
+
+/* IMAGEN */
+.hero-image {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 30px;
+  display: block;
+}
+
+/* TEXTO SOBRE IMAGEN */
+.hero-text {
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+  color: white;
+  text-shadow: 0 6px 18px rgba(0,0,0,.35);
+}
+
+.hero-text h1 {
+  font-size: 66px;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.tagline {
+  font-size: 14px;
+  opacity: .9;
+}
+
+/* CHAT */
+.chat-box {
+  background: var(--pink-soft);
+  border-radius: 25px;
+  padding: 12px;
+  box-shadow: 0 8px 18px rgba(229,92,138,.25);
+}
+
+.chat-box iframe {
+  width: 100%;
+  height: 360px;
+  border-radius: 18px;
+  border: none;
+}
+
