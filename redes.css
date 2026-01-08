@@ -1,0 +1,57 @@
+@import url("galeria.css");
+
+/* SOCIAL HUB */
+.socials {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.socials h2 {
+  color: var(--pink-dark);
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.social-card {
+  background: var(--pink-soft);
+  border-radius: 30px;
+  padding: 35px 25px;
+  text-decoration: none;
+  color: var(--text);
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+  transition: transform .35s var(--ease-kawaii), box-shadow .35s var(--ease-soft);
+}
+
+.social-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(229,92,138,.3);
+}
+
+.social-card .icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.social-card h3 {
+  margin: 0;
+}
+
+.social-card p {
+  font-size: 13px;
+  opacity: .8;
+  margin-top: 6px;
+}
+
+/* Subtle personality colors */
+.social-card.design { background: linear-gradient(135deg, #f8b6cb, #f27ca5); }
+.social-card.business { background: linear-gradient(135deg, #f27ca5, #e55c8a); }
+.social-card.personal { background: linear-gradient(135deg, #f8b6cb, #ffd1e1); }
+.social-card.behance { background: linear-gradient(135deg, #f27ca5, #c14c7a); }
