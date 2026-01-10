@@ -141,3 +141,29 @@
   line-height: 1.6;
   color: var(--text);
 }
+
+
+
+
+.music-platforms {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.music-platforms a {
+  padding: 8px 18px;
+  background: var(--pink-soft);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 13px;
+  transition: transform .3s var(--ease-kawaii), box-shadow .3s var(--ease-soft), background .3s;
+}
+
+.music-platforms a:hover {
+  background: var(--pink-dark);
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(229,92,138,.25);
+}
